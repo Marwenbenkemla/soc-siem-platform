@@ -1,0 +1,3332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opnsense>
+  
+  
+  <theme>opnsense</theme>
+  
+  
+  <sysctl version="1.0.2" persisted_at="1782314660.36" description="System Tunables">
+    
+    
+    <item/>
+    
+  
+  </sysctl>
+  
+  
+  <system>
+    
+    
+    <optimization>normal</optimization>
+    
+    
+    <hostname>[REDACTED]</hostname>
+    
+    
+    <domain>[REDACTED]</domain>
+    
+    
+    <dnsallowoverride>1</dnsallowoverride>
+    
+    
+    <dnsallowoverride_exclude/>
+    
+    
+    <group uuid="[REDACTED]">
+      
+      
+      <gid>1999</gid>
+      
+      
+      <name>admins</name>
+      
+      
+      <scope>system</scope>
+      
+      
+      <description>System Administrators</description>
+      
+      
+      <priv>page-all</priv>
+      
+      
+      <member>0</member>
+      
+      
+      <source_networks/>
+      
+    
+    </group>
+    
+    
+    <user uuid="[REDACTED]">
+      
+      
+      <uid>0</uid>
+      
+      
+      <name>root</name>
+      
+      
+      <disabled>0</disabled>
+      
+      
+      <scope>system</scope>
+      
+      
+      <expires/>
+      
+      
+      <authorizedkeys/>
+      
+      
+      <otp_seed/>
+      
+      
+      <shell/>
+      
+      
+      <password>[REDACTED]</password>
+      
+      
+      <pwd_changed_at/>
+      
+      
+      <landing_page/>
+      
+      
+      <comment/>
+      
+      
+      <email/>
+      
+      
+      <apikeys/>
+      
+      
+      <priv/>
+      
+      
+      <language/>
+      
+      
+      <descr>System Administrator</descr>
+      
+      
+      <dashboard/>
+      
+    
+    </user>
+    
+    
+    <user uuid="[REDACTED]">
+      
+      
+      <uid>2000</uid>
+      
+      
+      <name>shuffle</name>
+      
+      
+      <disabled>0</disabled>
+      
+      
+      <scope>user</scope>
+      
+      
+      <expires/>
+      
+      
+      <authorizedkeys/>
+      
+      
+      <otp_seed/>
+      
+      
+      <shell/>
+      
+      
+      <password>[REDACTED]</password>
+      
+      
+      <pwd_changed_at>1788872742.0234</pwd_changed_at>
+      
+      
+      <landing_page/>
+      
+      
+      <comment/>
+      
+      
+      <email/>
+      
+      
+      <apikeys>[REDACTED]</apikeys>
+      
+      
+      <priv>page-all</priv>
+      
+      
+      <language/>
+      
+      
+      <descr/>
+      
+      
+      <dashboard/>
+      
+    
+    </user>
+    
+    
+    <timezone>Etc/UTC</timezone>
+    
+    
+    <timeservers>0.opnsense.pool.ntp.org 1.opnsense.pool.ntp.org 2.opnsense.pool.ntp.org 3.opnsense.pool.ntp.org</timeservers>
+    
+    
+    <webgui>
+      
+      
+      <protocol>http</protocol>
+      
+      
+      <ssl-certref>6a3bf6b8c72d6</ssl-certref>
+      
+      
+      <port/>
+      
+      
+      <ssl-ciphers/>
+      
+      
+      <interfaces/>
+      
+      
+      <compression/>
+      
+    
+    </webgui>
+    
+    
+    <disablenatreflection>yes</disablenatreflection>
+    
+    
+    <usevirtualterminal>1</usevirtualterminal>
+    
+    
+    <disableconsolemenu>1</disableconsolemenu>
+    
+    
+    <powerd_ac_mode>hadp</powerd_ac_mode>
+    
+    
+    <powerd_battery_mode>hadp</powerd_battery_mode>
+    
+    
+    <powerd_normal_mode>hadp</powerd_normal_mode>
+    
+    
+    <bogons>
+      
+      
+      <interval>monthly</interval>
+      
+    
+    </bogons>
+    
+    
+    <pf_share_forward>1</pf_share_forward>
+    
+    
+    <lb_use_sticky>1</lb_use_sticky>
+    
+    
+    <ssh>
+      
+      
+      <group>admins</group>
+      
+      
+      <noauto>1</noauto>
+      
+      
+      <interfaces/>
+      
+      
+      <kex/>
+      
+      
+      <ciphers/>
+      
+      
+      <macs/>
+      
+      
+      <keys/>
+      
+      
+      <keysig/>
+      
+      
+      <rekeylimit/>
+      
+      
+      <enabled>enabled</enabled>
+      
+    
+    </ssh>
+    
+    
+    <rrdbackup>-1</rrdbackup>
+    
+    
+    <netflowbackup>-1</netflowbackup>
+    
+    
+    <firmware version="1.0.1" persisted_at="1782314660.03" description="Firmware settings">
+      
+      
+      <mirror/>
+      
+      
+      <flavour/>
+      
+      
+      <plugins/>
+      
+      
+      <type/>
+      
+      
+      <subscription/>
+      
+      
+      <reboot>0</reboot>
+      
+      
+      <aux>0</aux>
+      
+    
+    </firmware>
+    
+    
+    <serialspeed>115200</serialspeed>
+    
+    
+    <primaryconsole>video</primaryconsole>
+    
+  
+  </system>
+  
+  
+  <interfaces>
+    
+    
+    <lan>
+      
+      
+      <if>em1</if>
+      
+      
+      <descr/>
+      
+      
+      <enable>1</enable>
+      
+      
+      <spoofmac/>
+      
+      
+      <ipaddr>[REDACTED]</ipaddr>
+      
+      
+      <subnet>24</subnet>
+      
+    
+    </lan>
+    
+    
+    <lo0>
+      
+      
+      <internal_dynamic>1</internal_dynamic>
+      
+      
+      <descr>Loopback</descr>
+      
+      
+      <enable>1</enable>
+      
+      
+      <if>lo0</if>
+      
+      
+      <ipaddr>[REDACTED]</ipaddr>
+      
+      
+      <ipaddrv6>[REDACTED]</ipaddrv6>
+      
+      
+      <subnet>8</subnet>
+      
+      
+      <subnetv6>128</subnetv6>
+      
+      
+      <type>none</type>
+      
+      
+      <virtual>1</virtual>
+      
+    
+    </lo0>
+    
+    
+    <wan>
+      
+      
+      <if>em0</if>
+      
+      
+      <enable>1</enable>
+      
+      
+      <ipaddr>[REDACTED]</ipaddr>
+      
+      
+      <ipaddrv6>[REDACTED]</ipaddrv6>
+      
+      
+      <blockbogons>1</blockbogons>
+      
+      
+      <blockpriv>1</blockpriv>
+      
+    
+    </wan>
+    
+    
+    <opt1>
+      
+      
+      <if>em2</if>
+      
+      
+      <enable>1</enable>
+      
+      
+      <ipaddr>[REDACTED]</ipaddr>
+      
+      
+      <subnet>24</subnet>
+      
+      
+      <gateway/>
+      
+      
+      <ipaddrv6/>
+      
+      
+      <subnetv6/>
+      
+      
+      <gatewayv6/>
+      
+    
+    </opt1>
+    
+    
+    <opt2>
+      
+      
+      <if>em3</if>
+      
+      
+      <enable>1</enable>
+      
+      
+      <ipaddr>[REDACTED]</ipaddr>
+      
+      
+      <subnet>24</subnet>
+      
+      
+      <gateway/>
+      
+      
+      <ipaddrv6/>
+      
+      
+      <subnetv6/>
+      
+      
+      <gatewayv6/>
+      
+    
+    </opt2>
+    
+  
+  </interfaces>
+  
+  
+  <dnsmasq version="1.0.9" persisted_at="1782314660.67" description="Dnsmasq DNS and DHCP">
+    
+    
+    <enable>1</enable>
+    
+    
+    <regdhcp>0</regdhcp>
+    
+    
+    <regdhcpstatic>0</regdhcpstatic>
+    
+    
+    <dhcpfirst>0</dhcpfirst>
+    
+    
+    <strict_order>0</strict_order>
+    
+    
+    <domain_needed>0</domain_needed>
+    
+    
+    <no_private_reverse>0</no_private_reverse>
+    
+    
+    <no_resolv>0</no_resolv>
+    
+    
+    <log_queries>0</log_queries>
+    
+    
+    <no_hosts>0</no_hosts>
+    
+    
+    <strictbind>0</strictbind>
+    
+    
+    <dnssec>0</dnssec>
+    
+    
+    <regdhcpdomain/>
+    
+    
+    <interface>lan</interface>
+    
+    
+    <port>53053</port>
+    
+    
+    <dns_forward_max/>
+    
+    
+    <cache_size/>
+    
+    
+    <local_ttl/>
+    
+    
+    <add_mac/>
+    
+    
+    <add_subnet>0</add_subnet>
+    
+    
+    <strip_subnet>0</strip_subnet>
+    
+    
+    <dhcp>
+      
+      
+      <no_interface/>
+      
+      
+      <fqdn>1</fqdn>
+      
+      
+      <domain/>
+      
+      
+      <local>1</local>
+      
+      
+      <lease_max/>
+      
+      
+      <authoritative>0</authoritative>
+      
+      
+      <default_fw_rules>1</default_fw_rules>
+      
+      
+      <reply_delay/>
+      
+      
+      <enable_ra>1</enable_ra>
+      
+      
+      <host_ping>1</host_ping>
+      
+      
+      <nosync>0</nosync>
+      
+      
+      <log_dhcp>0</log_dhcp>
+      
+      
+      <log_quiet>0</log_quiet>
+      
+    
+    </dhcp>
+    
+    
+    <no_ident>1</no_ident>
+    
+    
+    <dhcp_ranges uuid="[REDACTED]">
+      
+      
+      <interface>opt1</interface>
+      
+      
+      <start_addr>[REDACTED]</start_addr>
+      
+      
+      <end_addr>[REDACTED]</end_addr>
+      
+    
+    </dhcp_ranges>
+    
+    
+    <dhcp_ranges uuid="[REDACTED]">
+      
+      
+      <interface>opt2</interface>
+      
+      
+      <start_addr>[REDACTED]</start_addr>
+      
+      
+      <end_addr>[REDACTED]</end_addr>
+      
+    
+    </dhcp_ranges>
+    
+    
+    <dhcp_ranges uuid="[REDACTED]">
+      
+      
+      <interface>lan</interface>
+      
+      
+      <start_addr>[REDACTED]</start_addr>
+      
+      
+      <end_addr>[REDACTED]</end_addr>
+      
+    
+    </dhcp_ranges>
+    
+  
+  </dnsmasq>
+  
+  
+  <nat>
+    
+    
+    <outbound>
+      
+      
+      <mode>automatic</mode>
+      
+    
+    </outbound>
+    
+  
+  </nat>
+  
+  
+  <filter>
+    
+    
+    <rule uuid="[REDACTED]">
+      
+      
+      <type>pass</type>
+      
+      
+      <interface>lan</interface>
+      
+      
+      <ipprotocol>inet</ipprotocol>
+      
+      
+      <statetype>keep state</statetype>
+      
+      
+      <direction>in</direction>
+      
+      
+      <quick>1</quick>
+      
+      
+      <source>
+        
+        
+        <network>lan</network>
+        
+      
+      </source>
+      
+      
+      <destination>
+        
+        
+        <any>1</any>
+        
+      
+      </destination>
+      
+      
+      <updated>
+        
+        
+        <username>[REDACTED]</username>
+        
+        
+        <time>1783496811.97</time>
+        
+        
+        <description>/firewall_rules_edit.php made changes</description>
+        
+      
+      </updated>
+      
+      
+      <created>
+        
+        
+        <username>[REDACTED]</username>
+        
+        
+        <time>1782726459.64</time>
+        
+        
+        <description>/firewall_rules_edit.php made changes</description>
+        
+      
+      </created>
+      
+    
+    </rule>
+    
+    
+    <rule uuid="[REDACTED]">
+      
+      
+      <type>block</type>
+      
+      
+      <interface>opt2</interface>
+      
+      
+      <ipprotocol>inet</ipprotocol>
+      
+      
+      <statetype>keep state</statetype>
+      
+      
+      <direction>in</direction>
+      
+      
+      <quick>1</quick>
+      
+      
+      <source>
+        
+        
+        <address>soc_blocklist</address>
+        
+      
+      </source>
+      
+      
+      <destination>
+        
+        
+        <any>1</any>
+        
+      
+      </destination>
+      
+      
+      <updated>
+        
+        
+        <username>[REDACTED]</username>
+        
+        
+        <time>1788940677.68</time>
+        
+        
+        <description>/firewall_rules_edit.php made changes</description>
+        
+      
+      </updated>
+      
+      
+      <created>
+        
+        
+        <username>[REDACTED]</username>
+        
+        
+        <time>1788940677.68</time>
+        
+        
+        <description>/firewall_rules_edit.php made changes</description>
+        
+      
+      </created>
+      
+    
+    </rule>
+    
+    
+    <rule uuid="[REDACTED]">
+      
+      
+      <type>pass</type>
+      
+      
+      <interface>opt2</interface>
+      
+      
+      <ipprotocol>inet</ipprotocol>
+      
+      
+      <statetype>keep state</statetype>
+      
+      
+      <direction>in</direction>
+      
+      
+      <quick>1</quick>
+      
+      
+      <source>
+        
+        
+        <network>opt2</network>
+        
+      
+      </source>
+      
+      
+      <destination>
+        
+        
+        <any>1</any>
+        
+      
+      </destination>
+      
+      
+      <updated>
+        
+        
+        <username>[REDACTED]</username>
+        
+        
+        <time>1782385623.48</time>
+        
+        
+        <description>/firewall_rules_edit.php made changes</description>
+        
+      
+      </updated>
+      
+      
+      <created>
+        
+        
+        <username>[REDACTED]</username>
+        
+        
+        <time>1782384301.14</time>
+        
+        
+        <description>/firewall_rules_edit.php made changes</description>
+        
+      
+      </created>
+      
+    
+    </rule>
+    
+  
+  </filter>
+  
+  
+  <rrd>
+    
+    
+    <enable/>
+    
+  
+  </rrd>
+  
+  
+  <ntpd>
+    
+    
+    <prefer>0.opnsense.pool.ntp.org</prefer>
+    
+    
+    <ispool>0.opnsense.pool.ntp.org 1.opnsense.pool.ntp.org 2.opnsense.pool.ntp.org 3.opnsense.pool.ntp.org</ispool>
+    
+  
+  </ntpd>
+  
+  
+  <revision>
+    
+    
+    <username>[REDACTED]</username>
+    
+    
+    <description>/api/firewall/alias_util/delete/soc_blocklist made changes</description>
+    
+    
+    <time>1793780519.01</time>
+    
+  
+  </revision>
+  
+  
+  <OPNsense>
+    
+    
+    <wireguard>
+      
+      
+      <client version="1.0.0" persisted_at="1782314659.91" description="WireGuard peer configuration">
+        
+        
+        <clients/>
+        
+      
+      </client>
+      
+      
+      <general version="0.0.1" persisted_at="1782314659.91" description="WireGuard configuration">
+        
+        
+        <enabled>0</enabled>
+        
+      
+      </general>
+      
+      
+      <server version="1.0.1" persisted_at="1782314659.91" description="WireGuard instance configuration">
+        
+        
+        <servers/>
+        
+      
+      </server>
+      
+    
+    </wireguard>
+    
+    
+    <IPsec version="1.0.5" persisted_at="1782314659.92" description="IPsec settings">
+      
+      
+      <general>
+        
+        
+        <enabled/>
+        
+        
+        <preferred_oldsa>0</preferred_oldsa>
+        
+        
+        <disablevpnrules>0</disablevpnrules>
+        
+        
+        <passthrough_networks/>
+        
+        
+        <user_source/>
+        
+        
+        <local_group/>
+        
+      
+      </general>
+      
+      
+      <charon>
+        
+        
+        <max_ikev1_exchanges/>
+        
+        
+        <threads>16</threads>
+        
+        
+        <ikesa_table_size>32</ikesa_table_size>
+        
+        
+        <ikesa_table_segments>4</ikesa_table_segments>
+        
+        
+        <init_limit_half_open>1000</init_limit_half_open>
+        
+        
+        <ignore_acquire_ts>1</ignore_acquire_ts>
+        
+        
+        <install_routes>0</install_routes>
+        
+        
+        <cisco_unity>0</cisco_unity>
+        
+        
+        <make_before_break>0</make_before_break>
+        
+        
+        <retransmit_tries/>
+        
+        
+        <retransmit_timeout/>
+        
+        
+        <retransmit_base/>
+        
+        
+        <retransmit_jitter/>
+        
+        
+        <retransmit_limit/>
+        
+        
+        <reqid_base/>
+        
+        
+        <syslog>
+          
+          
+          <daemon>
+            
+            
+            <ike_name>1</ike_name>
+            
+            
+            <log_level>0</log_level>
+            
+            
+            <app>1</app>
+            
+            
+            <asn>1</asn>
+            
+            
+            <cfg>1</cfg>
+            
+            
+            <chd>1</chd>
+            
+            
+            <dmn>1</dmn>
+            
+            
+            <enc>1</enc>
+            
+            
+            <esp>1</esp>
+            
+            
+            <ike>1</ike>
+            
+            
+            <imc>1</imc>
+            
+            
+            <imv>1</imv>
+            
+            
+            <job>1</job>
+            
+            
+            <knl>1</knl>
+            
+            
+            <lib>1</lib>
+            
+            
+            <mgr>1</mgr>
+            
+            
+            <net>1</net>
+            
+            
+            <pts>1</pts>
+            
+            
+            <tls>1</tls>
+            
+            
+            <tnc>1</tnc>
+            
+          
+          </daemon>
+          
+        
+        </syslog>
+        
+        
+        <plugins>
+          
+          
+          <attr>
+            
+            
+            <subnet/>
+            
+            
+            <split-include/>
+            
+            
+            <x_28674/>
+            
+            
+            <x_28675/>
+            
+            
+            <x_28672/>
+            
+            
+            <x_28673>0</x_28673>
+            
+            
+            <x_28679/>
+            
+            
+            <dns/>
+            
+            
+            <nbns/>
+            
+          
+          </attr>
+          
+          
+          <eap-radius>
+            
+            
+            <servers/>
+            
+            
+            <accounting>0</accounting>
+            
+            
+            <class_group>0</class_group>
+            
+          
+          </eap-radius>
+          
+          
+          <xauth-pam>
+            
+            
+            <pam_service>ipsec</pam_service>
+            
+            
+            <session>0</session>
+            
+            
+            <trim_email>1</trim_email>
+            
+          
+          </xauth-pam>
+          
+        
+        </plugins>
+        
+      
+      </charon>
+      
+      
+      <keyPairs/>
+      
+      
+      <preSharedKeys/>
+      
+    
+    </IPsec>
+    
+    
+    <Swanctl version="1.0.0" persisted_at="1782314659.95" description="IPsec connections">
+      
+      
+      <Connections/>
+      
+      
+      <locals/>
+      
+      
+      <remotes/>
+      
+      
+      <children/>
+      
+      
+      <Pools/>
+      
+      
+      <VTIs/>
+      
+      
+      <SPDs/>
+      
+    
+    </Swanctl>
+    
+    
+    <OpenVPNExport version="0.0.1" persisted_at="1782314660.36" description="OpenVPN export presets">
+      
+      
+      <servers/>
+      
+    
+    </OpenVPNExport>
+    
+    
+    <OpenVPN version="1.0.1" persisted_at="1782314660.36" description="OpenVPN">
+      
+      
+      <Overwrites/>
+      
+      
+      <Instances/>
+      
+      
+      <StaticKeys/>
+      
+    
+    </OpenVPN>
+    
+    
+    <captiveportal version="1.0.5" persisted_at="1782314660.36" description="Captive portal application model">
+      
+      
+      <zones/>
+      
+      
+      <templates/>
+      
+    
+    </captiveportal>
+    
+    
+    <cron version="1.0.4" persisted_at="1783326472.57" description="Cron settings">
+      
+      
+      <jobs>
+        
+        
+        <job uuid="[REDACTED]">
+          
+          
+          <origin>IDS</origin>
+          
+          
+          <enabled>0</enabled>
+          
+          
+          <minutes>0</minutes>
+          
+          
+          <hours>0</hours>
+          
+          
+          <days>*</days>
+          
+          
+          <months>*</months>
+          
+          
+          <weekdays>*</weekdays>
+          
+          
+          <who>root</who>
+          
+          
+          <command>ids update</command>
+          
+          
+          <parameters/>
+          
+          
+          <description>ids rule updates</description>
+          
+        
+        </job>
+        
+      
+      </jobs>
+      
+    
+    </cron>
+    
+    
+    <DHCRelay version="1.0.1" persisted_at="1782314660.37" description="DHCRelay configuration"/>
+    
+    
+    <Firewall>
+      
+      
+      <Lvtemplate version="0.0.1" persisted_at="1782314660.37" description="Firewall Live View filter templates">
+        
+        
+        <templates/>
+        
+      
+      </Lvtemplate>
+      
+      
+      <Alias version="1.0.1" persisted_at="1793780519.01" description="Firewall aliases">
+        
+        
+        <geoip>
+          
+          
+          <url/>
+          
+        
+        </geoip>
+        
+        
+        <aliases>
+          
+          
+          <alias uuid="[REDACTED]">
+            
+            
+            <enabled>1</enabled>
+            
+            
+            <name>soc_blocklist</name>
+            
+            
+            <type>host</type>
+            
+            
+            <path_expression/>
+            
+            
+            <proto/>
+            
+            
+            <interface/>
+            
+            
+            <counters>0</counters>
+            
+            
+            <updatefreq/>
+            
+            
+            <content/>
+            
+            
+            <password/>
+            
+            
+            <username/>
+            
+            
+            <authtype/>
+            
+            
+            <expire/>
+            
+            
+            <categories/>
+            
+            
+            <description/>
+            
+          
+          </alias>
+          
+        
+        </aliases>
+        
+      
+      </Alias>
+      
+      
+      <Category version="1.0.0" persisted_at="1782314660.68" description="Firewall categories">
+        
+        
+        <categories/>
+        
+      
+      </Category>
+      
+      
+      <Filter version="1.0.4" persisted_at="1782314660.77" description="Firewall rules (new)">
+        
+        
+        <rules/>
+        
+        
+        <snatrules/>
+        
+        
+        <npt/>
+        
+        
+        <onetoone/>
+        
+      
+      </Filter>
+      
+    
+    </Firewall>
+    
+    
+    <Netflow version="1.0.1" persisted_at="1782314660.38" description="NetFlow configuration">
+      
+      
+      <capture>
+        
+        
+        <interfaces/>
+        
+        
+        <egress_only/>
+        
+        
+        <version>v9</version>
+        
+        
+        <targets/>
+        
+      
+      </capture>
+      
+      
+      <collect>
+        
+        
+        <enable>0</enable>
+        
+      
+      </collect>
+      
+      
+      <activeTimeout>1800</activeTimeout>
+      
+      
+      <inactiveTimeout>15</inactiveTimeout>
+      
+    
+    </Netflow>
+    
+    
+    <Hostwatch version="1.0.0" persisted_at="1782314660.77" description="Host discovery">
+      
+      
+      <general>
+        
+        
+        <enabled>1</enabled>
+        
+        
+        <promisc>0</promisc>
+        
+        
+        <verbose>0</verbose>
+        
+        
+        <skip_nets/>
+        
+        
+        <expire4_interval/>
+        
+        
+        <expire6_interval/>
+        
+        
+        <interface/>
+        
+      
+      </general>
+      
+    
+    </Hostwatch>
+    
+    
+    <IDS version="1.1.2" persisted_at="1783506297.85" description="Intrusion detection">
+      
+      
+      <rules>
+        
+        
+        <rule uuid="[REDACTED]">
+          
+          
+          <sid>2000005</sid>
+          
+          
+          <enabled>1</enabled>
+          
+          
+          <action>alert</action>
+          
+        
+        </rule>
+        
+        
+        <rule uuid="[REDACTED]">
+          
+          
+          <sid>2000536</sid>
+          
+          
+          <enabled>1</enabled>
+          
+          
+          <action>alert</action>
+          
+        
+        </rule>
+        
+        
+        <rule uuid="[REDACTED]">
+          
+          
+          <sid>2000537</sid>
+          
+          
+          <enabled>1</enabled>
+          
+          
+          <action>alert</action>
+          
+        
+        </rule>
+        
+        
+        <rule uuid="[REDACTED]">
+          
+          
+          <sid>2000538</sid>
+          
+          
+          <enabled>1</enabled>
+          
+          
+          <action>alert</action>
+          
+        
+        </rule>
+        
+        
+        <rule uuid="[REDACTED]">
+          
+          
+          <sid>2000540</sid>
+          
+          
+          <enabled>1</enabled>
+          
+          
+          <action>alert</action>
+          
+        
+        </rule>
+        
+        
+        <rule uuid="[REDACTED]">
+          
+          
+          <sid>2000543</sid>
+          
+          
+          <enabled>1</enabled>
+          
+          
+          <action>alert</action>
+          
+        
+        </rule>
+        
+        
+        <rule uuid="[REDACTED]">
+          
+          
+          <sid>2000544</sid>
+          
+          
+          <enabled>1</enabled>
+          
+          
+          <action>alert</action>
+          
+        
+        </rule>
+        
+        
+        <rule uuid="[REDACTED]">
+          
+          
+          <sid>2000545</sid>
+          
+          
+          <enabled>1</enabled>
+          
+          
+          <action>alert</action>
+          
+        
+        </rule>
+        
+        
+        <rule uuid="[REDACTED]">
+          
+          
+          <sid>2000546</sid>
+          
+          
+          <enabled>1</enabled>
+          
+          
+          <action>alert</action>
+          
+        
+        </rule>
+        
+      
+      </rules>
+      
+      
+      <policies/>
+      
+      
+      <userDefinedRules/>
+      
+      
+      <files>
+        
+        
+        <file uuid="[REDACTED]">
+          
+          
+          <filename>abuse.ch.feodotracker.rules</filename>
+          
+          
+          <enabled>1</enabled>
+          
+        
+        </file>
+        
+        
+        <file uuid="[REDACTED]">
+          
+          
+          <filename>abuse.ch.sslblacklist.rules</filename>
+          
+          
+          <enabled>1</enabled>
+          
+        
+        </file>
+        
+        
+        <file uuid="[REDACTED]">
+          
+          
+          <filename>abuse.ch.sslipblacklist.rules</filename>
+          
+          
+          <enabled>1</enabled>
+          
+        
+        </file>
+        
+        
+        <file uuid="[REDACTED]">
+          
+          
+          <filename>abuse.ch.threatfox.rules</filename>
+          
+          
+          <enabled>1</enabled>
+          
+        
+        </file>
+        
+        
+        <file uuid="[REDACTED]">
+          
+          
+          <filename>abuse.ch.urlhaus.rules</filename>
+          
+          
+          <enabled>1</enabled>
+          
+        
+        </file>
+        
+        
+        <file uuid="[REDACTED]">
+          
+          
+          <filename>emerging-attack_response.rules</filename>
+          
+          
+          <enabled>1</enabled>
+          
+        
+        </file>
+        
+        
+        <file uuid="[REDACTED]">
+          
+          
+          <filename>emerging-dns.rules</filename>
+          
+          
+          <enabled>1</enabled>
+          
+        
+        </file>
+        
+        
+        <file uuid="[REDACTED]">
+          
+          
+          <filename>emerging-dos.rules</filename>
+          
+          
+          <enabled>1</enabled>
+          
+        
+        </file>
+        
+        
+        <file uuid="[REDACTED]">
+          
+          
+          <filename>emerging-exploit.rules</filename>
+          
+          
+          <enabled>1</enabled>
+          
+        
+        </file>
+        
+        
+        <file uuid="[REDACTED]">
+          
+          
+          <filename>emerging-exploit_kit.rules</filename>
+          
+          
+          <enabled>1</enabled>
+          
+        
+        </file>
+        
+        
+        <file uuid="[REDACTED]">
+          
+          
+          <filename>emerging-ftp.rules</filename>
+          
+          
+          <enabled>1</enabled>
+          
+        
+        </file>
+        
+        
+        <file uuid="[REDACTED]">
+          
+          
+          <filename>emerging-hunting.rules</filename>
+          
+          
+          <enabled>1</enabled>
+          
+        
+        </file>
+        
+        
+        <file uuid="[REDACTED]">
+          
+          
+          <filename>emerging-icmp.rules</filename>
+          
+          
+          <enabled>1</enabled>
+          
+        
+        </file>
+        
+        
+        <file uuid="[REDACTED]">
+          
+          
+          <filename>emerging-icmp_info.rules</filename>
+          
+          
+          <enabled>1</enabled>
+          
+        
+        </file>
+        
+        
+        <file uuid="[REDACTED]">
+          
+          
+          <filename>emerging-ja3.rules</filename>
+          
+          
+          <enabled>1</enabled>
+          
+        
+        </file>
+        
+        
+        <file uuid="[REDACTED]">
+          
+          
+          <filename>emerging-malware.rules</filename>
+          
+          
+          <enabled>1</enabled>
+          
+        
+        </file>
+        
+        
+        <file uuid="[REDACTED]">
+          
+          
+          <filename>emerging-netbios.rules</filename>
+          
+          
+          <enabled>1</enabled>
+          
+        
+        </file>
+        
+        
+        <file uuid="[REDACTED]">
+          
+          
+          <filename>emerging-remote_access.rules</filename>
+          
+          
+          <enabled>1</enabled>
+          
+        
+        </file>
+        
+        
+        <file uuid="[REDACTED]">
+          
+          
+          <filename>emerging-rpc.rules</filename>
+          
+          
+          <enabled>1</enabled>
+          
+        
+        </file>
+        
+        
+        <file uuid="[REDACTED]">
+          
+          
+          <filename>emerging-scan.rules</filename>
+          
+          
+          <enabled>1</enabled>
+          
+        
+        </file>
+        
+        
+        <file uuid="[REDACTED]">
+          
+          
+          <filename>emerging-shellcode.rules</filename>
+          
+          
+          <enabled>1</enabled>
+          
+        
+        </file>
+        
+        
+        <file uuid="[REDACTED]">
+          
+          
+          <filename>emerging-snmp.rules</filename>
+          
+          
+          <enabled>1</enabled>
+          
+        
+        </file>
+        
+        
+        <file uuid="[REDACTED]">
+          
+          
+          <filename>emerging-sql.rules</filename>
+          
+          
+          <enabled>1</enabled>
+          
+        
+        </file>
+        
+        
+        <file uuid="[REDACTED]">
+          
+          
+          <filename>emerging-user_agents.rules</filename>
+          
+          
+          <enabled>1</enabled>
+          
+        
+        </file>
+        
+        
+        <file uuid="[REDACTED]">
+          
+          
+          <filename>emerging-web_client.rules</filename>
+          
+          
+          <enabled>1</enabled>
+          
+        
+        </file>
+        
+        
+        <file uuid="[REDACTED]">
+          
+          
+          <filename>emerging-web_server.rules</filename>
+          
+          
+          <enabled>1</enabled>
+          
+        
+        </file>
+        
+        
+        <file uuid="[REDACTED]">
+          
+          
+          <filename>emerging-web_specific_apps.rules</filename>
+          
+          
+          <enabled>1</enabled>
+          
+        
+        </file>
+        
+      
+      </files>
+      
+      
+      <fileTags/>
+      
+      
+      <general>
+        
+        
+        <enabled>1</enabled>
+        
+        
+        <mode>pcap</mode>
+        
+        
+        <divert_listeners>1</divert_listeners>
+        
+        
+        <promisc>0</promisc>
+        
+        
+        <interfaces>lan,wan</interfaces>
+        
+        
+        <homenet>[REDACTED]</homenet>
+        
+        
+        <defaultPacketSize/>
+        
+        
+        <UpdateCron>4816a3ea-296d-4202-9ae1-1c6f5fbf3a97</UpdateCron>
+        
+        
+        <AlertLogrotate>W0D23</AlertLogrotate>
+        
+        
+        <AlertSaveLogs>4</AlertSaveLogs>
+        
+        
+        <MPMAlgo/>
+        
+        
+        <detect>
+          
+          
+          <Profile/>
+          
+          
+          <toclient_groups/>
+          
+          
+          <toserver_groups/>
+          
+        
+        </detect>
+        
+        
+        <syslog>0</syslog>
+        
+        
+        <syslog_eve>1</syslog_eve>
+        
+        
+        <LogPayload>0</LogPayload>
+        
+        
+        <verbosity/>
+        
+        
+        <eveLog>
+          
+          
+          <http>
+            
+            
+            <enable>0</enable>
+            
+            
+            <extended>0</extended>
+            
+            
+            <dumpAllHeaders/>
+            
+          
+          </http>
+          
+          
+          <tls>
+            
+            
+            <enable>0</enable>
+            
+            
+            <extended>0</extended>
+            
+            
+            <sessionResumption>0</sessionResumption>
+            
+            
+            <custom/>
+            
+          
+          </tls>
+          
+        
+        </eveLog>
+        
+      
+      </general>
+      
+    
+    </IDS>
+    
+    
+    <Interfaces>
+      
+      
+      <loopbacks version="1.0.0" persisted_at="1782314660.92" description="Loopback configuration"/>
+      
+      
+      <neighbors version="1.0.0" persisted_at="1782314660.92" description="Neighbor configuration"/>
+      
+      
+      <settings version="1.0.0" persisted_at="1782314660.92" description="Global interface settings">
+        
+        
+        <disablechecksumoffloading>1</disablechecksumoffloading>
+        
+        
+        <disablesegmentationoffloading>1</disablesegmentationoffloading>
+        
+        
+        <disablelargereceiveoffloading>1</disablelargereceiveoffloading>
+        
+        
+        <disablevlanhwfilter>2</disablevlanhwfilter>
+        
+        
+        <disableipv6>0</disableipv6>
+        
+        
+        <dhcp6_norelease>0</dhcp6_norelease>
+        
+        
+        <dhcp6_debug>0</dhcp6_debug>
+        
+        
+        <dhcp6_duid/>
+        
+        
+        <dhcp6_ratimeout>10</dhcp6_ratimeout>
+        
+      
+      </settings>
+      
+      
+      <vxlans version="1.0.2" persisted_at="1782314660.95" description="VXLAN configuration"/>
+      
+    
+    </Interfaces>
+    
+    
+    <Kea>
+      
+      
+      <ctrl_agent version="0.0.1" persisted_at="1782314660.96" description="Kea Control Agent configuration">
+        
+        
+        <general>
+          
+          
+          <enabled>0</enabled>
+          
+          
+          <http_host>[REDACTED]</http_host>
+          
+          
+          <http_port>8000</http_port>
+          
+        
+        </general>
+        
+      
+      </ctrl_agent>
+      
+      
+      <ddns version="1.0.0" persisted_at="1782314660.96" description="Kea Dynamic DNS configuration">
+        
+        
+        <general>
+          
+          
+          <enabled>0</enabled>
+          
+          
+          <server_ip>[REDACTED]</server_ip>
+          
+          
+          <server_port>53001</server_port>
+          
+        
+        </general>
+        
+      
+      </ddns>
+      
+      
+      <dhcp4 version="1.0.4" persisted_at="1782314660.99" description="Kea DHCPv4 configuration">
+        
+        
+        <general>
+          
+          
+          <enabled>0</enabled>
+          
+          
+          <manual_config>0</manual_config>
+          
+          
+          <interfaces/>
+          
+          
+          <service_sockets_max_retries/>
+          
+          
+          <service_sockets_retry_wait_time/>
+          
+          
+          <valid_lifetime>4000</valid_lifetime>
+          
+          
+          <fwrules>1</fwrules>
+          
+          
+          <dhcp_socket_type>raw</dhcp_socket_type>
+          
+        
+        </general>
+        
+        
+        <lexpire>
+          
+          
+          <hold_reclaimed_time/>
+          
+          
+          <reclaim_timer_wait_time/>
+          
+          
+          <flush_reclaimed_timer_wait_time/>
+          
+          
+          <max_reclaim_time/>
+          
+          
+          <max_reclaim_leases/>
+          
+          
+          <unwarned_reclaim_cycles/>
+          
+        
+        </lexpire>
+        
+        
+        <ha>
+          
+          
+          <enabled>0</enabled>
+          
+          
+          <this_server_name/>
+          
+          
+          <max_unacked_clients>2</max_unacked_clients>
+          
+        
+        </ha>
+        
+        
+        <subnets/>
+        
+        
+        <reservations/>
+        
+        
+        <options/>
+        
+        
+        <ha_peers/>
+        
+      
+      </dhcp4>
+      
+      
+      <dhcp6 version="1.0.0" persisted_at="1782314661.05" description="Kea DHCPv6 configuration">
+        
+        
+        <general>
+          
+          
+          <enabled>0</enabled>
+          
+          
+          <manual_config>0</manual_config>
+          
+          
+          <interfaces/>
+          
+          
+          <service_sockets_max_retries/>
+          
+          
+          <service_sockets_retry_wait_time/>
+          
+          
+          <valid_lifetime>4000</valid_lifetime>
+          
+          
+          <fwrules>1</fwrules>
+          
+        
+        </general>
+        
+        
+        <lexpire>
+          
+          
+          <hold_reclaimed_time/>
+          
+          
+          <reclaim_timer_wait_time/>
+          
+          
+          <flush_reclaimed_timer_wait_time/>
+          
+          
+          <max_reclaim_time/>
+          
+          
+          <max_reclaim_leases/>
+          
+          
+          <unwarned_reclaim_cycles/>
+          
+        
+        </lexpire>
+        
+        
+        <ha>
+          
+          
+          <enabled>0</enabled>
+          
+          
+          <this_server_name/>
+          
+          
+          <max_unacked_clients>2</max_unacked_clients>
+          
+        
+        </ha>
+        
+        
+        <subnets/>
+        
+        
+        <reservations/>
+        
+        
+        <options/>
+        
+        
+        <pd_pools/>
+        
+        
+        <ha_peers/>
+        
+      
+      </dhcp6>
+      
+    
+    </Kea>
+    
+    
+    <monit version="1.0.14" persisted_at="1782314661.06" description="Monit settings">
+      
+      
+      <general>
+        
+        
+        <enabled>0</enabled>
+        
+        
+        <interval>120</interval>
+        
+        
+        <startdelay>120</startdelay>
+        
+        
+        <mailserver>[REDACTED]</mailserver>
+        
+        
+        <port>25</port>
+        
+        
+        <username/>
+        
+        
+        <password/>
+        
+        
+        <ssl>0</ssl>
+        
+        
+        <sslversion>auto</sslversion>
+        
+        
+        <sslverify>1</sslverify>
+        
+        
+        <logfile/>
+        
+        
+        <statefile/>
+        
+        
+        <eventqueuePath/>
+        
+        
+        <eventqueueSlots/>
+        
+        
+        <httpdEnabled>0</httpdEnabled>
+        
+        
+        <httpdUsername>root</httpdUsername>
+        
+        
+        <httpdPassword/>
+        
+        
+        <httpdPort>2812</httpdPort>
+        
+        
+        <httpdAllow/>
+        
+        
+        <mmonitUrl/>
+        
+        
+        <mmonitTimeout>5</mmonitTimeout>
+        
+        
+        <mmonitRegisterCredentials>1</mmonitRegisterCredentials>
+        
+      
+      </general>
+      
+      
+      <alert uuid="[REDACTED]">
+        
+        
+        <enabled>0</enabled>
+        
+        
+        <recipient>[REDACTED]</recipient>
+        
+        
+        <noton>0</noton>
+        
+        
+        <events/>
+        
+        
+        <format/>
+        
+        
+        <reminder/>
+        
+        
+        <description/>
+        
+      
+      </alert>
+      
+      
+      <service uuid="[REDACTED]">
+        
+        
+        <enabled>1</enabled>
+        
+        
+        <name>$HOST</name>
+        
+        
+        <description/>
+        
+        
+        <type>system</type>
+        
+        
+        <pidfile/>
+        
+        
+        <match/>
+        
+        
+        <path/>
+        
+        
+        <timeout>300</timeout>
+        
+        
+        <starttimeout>30</starttimeout>
+        
+        
+        <address/>
+        
+        
+        <interface/>
+        
+        
+        <start/>
+        
+        
+        <stop/>
+        
+        
+        <tests>24d6010d-b97e-4c82-80ed-0fbfb855dd1e,4da25f79-0af3-42df-9e43-d5eaf28c5f24,e7c73460-6024-4921-b818-10a972b6dcde,7d01bc57-50d2-4ee7-8e05-310ed68e4d40</tests>
+        
+        
+        <depends/>
+        
+        
+        <polltime/>
+        
+      
+      </service>
+      
+      
+      <service uuid="[REDACTED]">
+        
+        
+        <enabled>1</enabled>
+        
+        
+        <name>RootFs</name>
+        
+        
+        <description/>
+        
+        
+        <type>filesystem</type>
+        
+        
+        <pidfile/>
+        
+        
+        <match/>
+        
+        
+        <path>/</path>
+        
+        
+        <timeout>300</timeout>
+        
+        
+        <starttimeout>30</starttimeout>
+        
+        
+        <address/>
+        
+        
+        <interface/>
+        
+        
+        <start/>
+        
+        
+        <stop/>
+        
+        
+        <tests>a67437ae-cb06-4323-a9f7-6d1a596edf4a</tests>
+        
+        
+        <depends/>
+        
+        
+        <polltime/>
+        
+      
+      </service>
+      
+      
+      <service uuid="[REDACTED]">
+        
+        
+        <enabled>0</enabled>
+        
+        
+        <name>carp_status_change</name>
+        
+        
+        <description/>
+        
+        
+        <type>custom</type>
+        
+        
+        <pidfile/>
+        
+        
+        <match/>
+        
+        
+        <path>/usr/local/opnsense/scripts/monit/carp_status.php</path>
+        
+        
+        <timeout>300</timeout>
+        
+        
+        <starttimeout>30</starttimeout>
+        
+        
+        <address/>
+        
+        
+        <interface/>
+        
+        
+        <start/>
+        
+        
+        <stop/>
+        
+        
+        <tests>6a7325a7-35df-40a7-b1db-4bdbd58f5088</tests>
+        
+        
+        <depends/>
+        
+        
+        <polltime/>
+        
+      
+      </service>
+      
+      
+      <service uuid="[REDACTED]">
+        
+        
+        <enabled>0</enabled>
+        
+        
+        <name>gateway_alert</name>
+        
+        
+        <description/>
+        
+        
+        <type>custom</type>
+        
+        
+        <pidfile/>
+        
+        
+        <match/>
+        
+        
+        <path>/usr/local/opnsense/scripts/monit/gateway_alert.php</path>
+        
+        
+        <timeout>300</timeout>
+        
+        
+        <starttimeout>30</starttimeout>
+        
+        
+        <address/>
+        
+        
+        <interface/>
+        
+        
+        <start/>
+        
+        
+        <stop/>
+        
+        
+        <tests>ba4052e9-545d-473d-8763-b01c7582a2a4</tests>
+        
+        
+        <depends/>
+        
+        
+        <polltime/>
+        
+      
+      </service>
+      
+      
+      <test uuid="[REDACTED]">
+        
+        
+        <name>Ping</name>
+        
+        
+        <type>NetworkPing</type>
+        
+        
+        <condition>failed ping</condition>
+        
+        
+        <action>alert</action>
+        
+        
+        <path/>
+        
+      
+      </test>
+      
+      
+      <test uuid="[REDACTED]">
+        
+        
+        <name>NetworkLink</name>
+        
+        
+        <type>NetworkInterface</type>
+        
+        
+        <condition>failed link</condition>
+        
+        
+        <action>alert</action>
+        
+        
+        <path/>
+        
+      
+      </test>
+      
+      
+      <test uuid="[REDACTED]">
+        
+        
+        <name>NetworkSaturation</name>
+        
+        
+        <type>NetworkInterface</type>
+        
+        
+        <condition>saturation is greater than 75%</condition>
+        
+        
+        <action>alert</action>
+        
+        
+        <path/>
+        
+      
+      </test>
+      
+      
+      <test uuid="[REDACTED]">
+        
+        
+        <name>MemoryUsage</name>
+        
+        
+        <type>SystemResource</type>
+        
+        
+        <condition>memory usage is greater than 75%</condition>
+        
+        
+        <action>alert</action>
+        
+        
+        <path/>
+        
+      
+      </test>
+      
+      
+      <test uuid="[REDACTED]">
+        
+        
+        <name>CPUUsage</name>
+        
+        
+        <type>SystemResource</type>
+        
+        
+        <condition>cpu usage is greater than 75%</condition>
+        
+        
+        <action>alert</action>
+        
+        
+        <path/>
+        
+      
+      </test>
+      
+      
+      <test uuid="[REDACTED]">
+        
+        
+        <name>LoadAvg1</name>
+        
+        
+        <type>SystemResource</type>
+        
+        
+        <condition>loadavg (1min) is greater than 4</condition>
+        
+        
+        <action>alert</action>
+        
+        
+        <path/>
+        
+      
+      </test>
+      
+      
+      <test uuid="[REDACTED]">
+        
+        
+        <name>LoadAvg5</name>
+        
+        
+        <type>SystemResource</type>
+        
+        
+        <condition>loadavg (5min) is greater than 3</condition>
+        
+        
+        <action>alert</action>
+        
+        
+        <path/>
+        
+      
+      </test>
+      
+      
+      <test uuid="[REDACTED]">
+        
+        
+        <name>LoadAvg15</name>
+        
+        
+        <type>SystemResource</type>
+        
+        
+        <condition>loadavg (15min) is greater than 2</condition>
+        
+        
+        <action>alert</action>
+        
+        
+        <path/>
+        
+      
+      </test>
+      
+      
+      <test uuid="[REDACTED]">
+        
+        
+        <name>SpaceUsage</name>
+        
+        
+        <type>SpaceUsage</type>
+        
+        
+        <condition>space usage is greater than 75%</condition>
+        
+        
+        <action>alert</action>
+        
+        
+        <path/>
+        
+      
+      </test>
+      
+      
+      <test uuid="[REDACTED]">
+        
+        
+        <name>ChangedStatus</name>
+        
+        
+        <type>ProgramStatus</type>
+        
+        
+        <condition>changed status</condition>
+        
+        
+        <action>alert</action>
+        
+        
+        <path/>
+        
+      
+      </test>
+      
+      
+      <test uuid="[REDACTED]">
+        
+        
+        <name>NonZeroStatus</name>
+        
+        
+        <type>ProgramStatus</type>
+        
+        
+        <condition>status != 0</condition>
+        
+        
+        <action>alert</action>
+        
+        
+        <path/>
+        
+      
+      </test>
+      
+    
+    </monit>
+    
+    
+    <radvd version="1.0.0" persisted_at="1782314661.06" description="Radvd configuration"/>
+    
+    
+    <Gateways version="1.0.0" persisted_at="1782314661.07" description="Gateways configuration"/>
+    
+    
+    <Syslog version="1.0.2" persisted_at="1783501633.58" description="System logging settings">
+      
+      
+      <general>
+        
+        
+        <enabled>1</enabled>
+        
+        
+        <loglocal>1</loglocal>
+        
+        
+        <maxpreserve>31</maxpreserve>
+        
+        
+        <maxfilesize/>
+        
+      
+      </general>
+      
+      
+      <destinations/>
+      
+    
+    </Syslog>
+    
+    
+    <TrafficShaper version="1.0.3" persisted_at="1782314661.09" description="Traffic shaper">
+      
+      
+      <pipes/>
+      
+      
+      <queues/>
+      
+      
+      <rules/>
+      
+    
+    </TrafficShaper>
+    
+    
+    <trust>
+      
+      
+      <general version="1.0.1" persisted_at="1782314661.30" description="Trust general settings">
+        
+        
+        <store_intermediate_certs>0</store_intermediate_certs>
+        
+        
+        <install_crls>0</install_crls>
+        
+        
+        <fetch_crls>0</fetch_crls>
+        
+        
+        <enable_legacy_sect>1</enable_legacy_sect>
+        
+        
+        <enable_config_constraints>0</enable_config_constraints>
+        
+        
+        <CipherString/>
+        
+        
+        <Ciphersuites/>
+        
+        
+        <SignatureAlgorithms/>
+        
+        
+        <groups/>
+        
+        
+        <MinProtocol/>
+        
+        
+        <MinProtocol_DTLS/>
+        
+      
+      </general>
+      
+    
+    </trust>
+    
+    
+    <unboundplus version="1.0.15" persisted_at="1782314661.41" description="Unbound configuration">
+      
+      
+      <general>
+        
+        
+        <enabled>1</enabled>
+        
+        
+        <port>53</port>
+        
+        
+        <stats>0</stats>
+        
+        
+        <active_interface/>
+        
+        
+        <dnssec>0</dnssec>
+        
+        
+        <dns64>0</dns64>
+        
+        
+        <dns64prefix/>
+        
+        
+        <noarecords>0</noarecords>
+        
+        
+        <regdhcp>0</regdhcp>
+        
+        
+        <regdhcpdomain/>
+        
+        
+        <regdhcpstatic>0</regdhcpstatic>
+        
+        
+        <noreglladdr6>0</noreglladdr6>
+        
+        
+        <noregrecords>0</noregrecords>
+        
+        
+        <txtsupport>0</txtsupport>
+        
+        
+        <cacheflush>0</cacheflush>
+        
+        
+        <safesearch>0</safesearch>
+        
+        
+        <local_zone_type>transparent</local_zone_type>
+        
+        
+        <outgoing_interface/>
+        
+        
+        <enable_wpad>0</enable_wpad>
+        
+      
+      </general>
+      
+      
+      <advanced>
+        
+        
+        <hideidentity>0</hideidentity>
+        
+        
+        <hideversion>0</hideversion>
+        
+        
+        <prefetch>0</prefetch>
+        
+        
+        <prefetchkey>0</prefetchkey>
+        
+        
+        <dnssecstripped>0</dnssecstripped>
+        
+        
+        <belownxdomain>1</belownxdomain>
+        
+        
+        <aggressivensec>1</aggressivensec>
+        
+        
+        <serveexpired>0</serveexpired>
+        
+        
+        <serveexpiredreplyttl/>
+        
+        
+        <serveexpiredttl/>
+        
+        
+        <serveexpiredttlreset>0</serveexpiredttlreset>
+        
+        
+        <serveexpiredclienttimeout/>
+        
+        
+        <qnameminstrict>0</qnameminstrict>
+        
+        
+        <extendedstatistics>0</extendedstatistics>
+        
+        
+        <logqueries>0</logqueries>
+        
+        
+        <logreplies>0</logreplies>
+        
+        
+        <logtagqueryreply>0</logtagqueryreply>
+        
+        
+        <logservfail>0</logservfail>
+        
+        
+        <loglocalactions>0</loglocalactions>
+        
+        
+        <logverbosity>1</logverbosity>
+        
+        
+        <valloglevel>0</valloglevel>
+        
+        
+        <privatedomain/>
+        
+        
+        <privateaddress>[REDACTED]</privateaddress>
+        
+        
+        <insecuredomain/>
+        
+        
+        <msgcachesize/>
+        
+        
+        <rrsetcachesize/>
+        
+        
+        <outgoingnumtcp/>
+        
+        
+        <incomingnumtcp/>
+        
+        
+        <numqueriesperthread/>
+        
+        
+        <outgoingrange/>
+        
+        
+        <jostletimeout/>
+        
+        
+        <discardtimeout/>
+        
+        
+        <cachemaxttl/>
+        
+        
+        <cachemaxnegativettl/>
+        
+        
+        <cacheminttl/>
+        
+        
+        <infrahostttl/>
+        
+        
+        <infrakeepprobing>0</infrakeepprobing>
+        
+        
+        <infracachenumhosts/>
+        
+        
+        <unwantedreplythreshold/>
+        
+      
+      </advanced>
+      
+      
+      <acls>
+        
+        
+        <default_action>allow</default_action>
+        
+      
+      </acls>
+      
+      
+      <dnsbl/>
+      
+      
+      <forwarding>
+        
+        
+        <enabled>0</enabled>
+        
+      
+      </forwarding>
+      
+      
+      <dots/>
+      
+      
+      <hosts/>
+      
+      
+      <aliases/>
+      
+    
+    </unboundplus>
+    
+  
+  </OPNsense>
+  
+  
+  <hasync version="1.0.2" persisted_at="1782314660.06" description="HA sync">
+    
+    
+    <disablepreempt>0</disablepreempt>
+    
+    
+    <disconnectppps>0</disconnectppps>
+    
+    
+    <pfsyncinterface/>
+    
+    
+    <pfsyncpeerip/>
+    
+    
+    <pfsyncversion>1400</pfsyncversion>
+    
+    
+    <pfsyncdefer>0</pfsyncdefer>
+    
+    
+    <synchronizetoip/>
+    
+    
+    <verifypeer>0</verifypeer>
+    
+    
+    <username/>
+    
+    
+    <password/>
+    
+    
+    <syncitems/>
+    
+  
+  </hasync>
+  
+  
+  <openvpn/>
+  
+  
+  <ifgroups version="1.0.0" persisted_at="1782314660.77" description="Firewall interface groups"/>
+  
+  
+  <bridges version="1.0.0" persisted_at="1782314660.88" description="Bridge devices">
+    
+    
+    <bridged/>
+    
+  
+  </bridges>
+  
+  
+  <gifs version="1.0.0" persisted_at="1782314660.89" description="GIF devices">
+    
+    
+    <gif/>
+    
+  
+  </gifs>
+  
+  
+  <gres version="1.0.0" persisted_at="1782314660.89" description="GRE devices">
+    
+    
+    <gre/>
+    
+  
+  </gres>
+  
+  
+  <laggs version="1.0.0" persisted_at="1782314660.92" description="LAGG devices"/>
+  
+  
+  <virtualip version="1.0.1" persisted_at="1782314660.92" description="Virtual IP configuration"/>
+  
+  
+  <vlans version="1.0.0" persisted_at="1782314660.95" description="VLAN configuration"/>
+  
+  
+  <staticroutes version="1.0.0" persisted_at="1782314661.06" description="Static routes">
+    
+    
+    <route/>
+    
+  
+  </staticroutes>
+  
+  
+  <ppps>
+    
+    
+    <ppp/>
+    
+  
+  </ppps>
+  
+  
+  <cert uuid="[REDACTED]">
+    
+    
+    <refid>[REDACTED]</refid>
+    
+    
+    <descr>Web GUI TLS certificate</descr>
+    
+    
+    <caref/>
+    
+    
+    <crt>[REDACTED]</crt>
+    
+    
+    <csr/>
+    
+    
+    <prv>[REDACTED]</prv>
+    
+  
+  </cert>
+  
+  
+  <syslog/>
+  
+
+</opnsense>
