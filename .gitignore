@@ -1,0 +1,9 @@
+*.vdi
+*.vmdk
+*.ova
+*.iso
+*.log
+.env
+*.key
+*.pem
+secrets/
