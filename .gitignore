@@ -17,3 +17,8 @@ thehive/elasticsearch/
 thehive/thehive/data/
 thehive/thehive/logs/
 cortex/es-data/
+# Shuffle : secrets et donnees
+shuffle/.env
+shuffle/shuffle-database/
+shuffle/shuffle-apps/
+shuffle/shuffle-files/
