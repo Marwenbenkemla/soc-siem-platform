@@ -1,0 +1,13 @@
+<!--
+  Ajouts à faire dans C:\Program Files (x86)\ossec-agent\ossec.conf (agent Windows).
+  Puis relance l'agent :  Restart-Service wazuhsvc
+-->
+
+<!-- 1. Collecte des événements Sysmon : à placer dans <ossec_config>, avec les autres <localfile> -->
+<localfile>
+  <location>Microsoft-Windows-Sysmon/Operational</location>
+  <log_format>eventchannel</log_format>
+</localfile>
+
+<!-- 2. FIM en temps réel : à ajouter dans le bloc <syscheck> existant, après les répertoires par défaut -->
+<directories check_all="yes" report_changes="yes" realtime="yes">C:\Users\Administrator\Desktop</directories>
