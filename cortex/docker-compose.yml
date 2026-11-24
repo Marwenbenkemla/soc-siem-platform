@@ -1,0 +1,26 @@
+services:
+  elasticsearch:
+    image: elasticsearch:8.19.15
+    mem_limit: 1400m
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=${ELASTICSEARCH_SECURITY_ENABLED:-false}
+      - "ES_JAVA_OPTS=-Xms1000m -Xmx1000m"
+    volumes:
+      - ./es-data:/usr/share/elasticsearch/data
+    restart: unless-stopped
+
+  cortex:
+    image: thehiveproject/cortex:latest
+    mem_limit: 1000m
+    depends_on:
+      - elasticsearch
+    environment:
+      - job_directory=/tmp/cortex-jobs
+      - docker_job_directory=/home/cortex/cortex-standalone/jobs
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /home/cortex/cortex-standalone/jobs:/tmp/cortex-jobs
+    ports:
+      - "9001:9001"
+    restart: unless-stopped

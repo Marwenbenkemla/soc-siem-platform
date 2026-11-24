@@ -7,3 +7,13 @@
 *.key
 *.pem
 secrets/
+# TheHive / Cortex : secrets generes a l'installation et donnees
+.env
+thehive/thehive/config/index.conf
+thehive/thehive/config/secret.conf
+thehive/nginx/certs/
+thehive/cassandra/
+thehive/elasticsearch/
+thehive/thehive/data/
+thehive/thehive/logs/
+cortex/es-data/
