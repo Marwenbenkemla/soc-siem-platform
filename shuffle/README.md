@@ -73,7 +73,7 @@ authentifications des applications doivent être recréées.
 > placeholders (`YOUR_API_TOKEN`), et le corps (`body`) des nœuds TheHive et Telegram contient les modèles
 > par défaut des applications (`${title}`, `${message}`, `${chat_id}`, ...). Après l'import, ces corps doivent
 > être réécrits avec les champs produits par le nœud `detect_type` (`obs_type`, `obs_value`, `malware_confirmed`,
-> `file`, `vt_positives`, `vt_total`, `alert_title`). Les figures 4.52 à 4.60 du rapport montrent les valeurs utilisées dans le lab.
+> `file`, `vt_positives`, `vt_total`, `alert_title`).
 
 ## Fonctionnement du workflow
 
